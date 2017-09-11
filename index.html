@@ -4,9 +4,149 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+  <body class="inner-page">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <img class="main-logo">
+        <ul class="main-menu">
+          <li class="menu-item">Каталог</li>
+          <li class="menu-item">Доставка и оплата</li>
+          <li class="menu-item">О компании</li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-search"><button class="search-button"></button></li>
+          <li class="user-login">Вход</li>
+          <li class="user-cart">Корзина</li>
+        </ul>
+      </nav>
+      <p class="working-shedule">
+        C 10 до 20, ежедневно
+        8 812 450-25-25
+      </p>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
+      <section class="slider">
+        <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
+        <img class="slide-image">
+        <a class="button" href="#">Давайте оба!</a>
+        <ul class="slider-navigation">
+          <li class="slider-item"></li>
+          <li class="slider-item"></li>
+          <li class="slider-item"></li>
+        </ul>
+      </section>
+      <section class="sale">
+        <div class="sale-raspberry">
+          <h3>Малинка даром!</h3>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим
+             в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button" href="#">Хочу варенье!</a>
+        </div>
+        <div class="sale-chocolate">
+          <h3>Шоколадки даром!</h3>
+          <p>При покупке 2 кг пломбира, добавим
+             в ваш заказ упавку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="button" href="#">Хочу варенье!</a>
+        </div>
+      </section>
+      <section class="bestsellers">
+        <div class="bestseller">
+          <img class="bestseller-image">
+          <h3 class="price">310 Р/кг</h3>
+          <p class="bestseller-name">Сливочное с апельсиновым
+             джемом и цитрусовой стружкой</p>
+        </div>
+        <div class="bestseller">
+          <img class="bestseller-image">
+          <h3 class="price">380 Р/кг</h3>
+          <p class="bestseller-name">Сливочно-кофейное с кусочками
+             шоколада</p>
+        </div>
+        <div class="bestseller">
+          <img class="bestseller-image">
+          <h3 class="price">355 Р/кг</h3>
+          <p class="bestseller-name">Сливочно-клубничное с
+             присыпкой из белого шоколада</p>
+        </div>
+        <div class="bestseller">
+          <img class="bestseller-image">
+          <h3 class="price">415 Р/кг</h3>
+          <p class="bestseller-name">Сливочное крем-брюле с
+             с карамельной подливкой</p>
+        </div>
+      </section>
+      <section class="shop-description">
+        <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного
+           производства на развес</h3>
+        <p class="description-item">
+          Все наше мороженое изготавливается на собственном
+           производстве, с использованием современного оборудования
+           и проверенных временем технологий.</p>
+        <p class="description-item">
+          Для приготовления мороженого используются настоящие
+           сливки и молоко высочайшего качества. Все дополнительные 
+           ингредиенты и добавки произведены из натурального,
+           экологически чистого сырья</p>
+        <p class="description-item">Закупка ингредиентов  производится только у проверенных
+           фермерских хозяйств и компаний, с которыми нас связывает
+           долговременное сотрудничество.</p>
+        <p class="description-item">
+          Доставка нашего мороженого до заказчиков осуществляется в
+           специальном термопаке, который не дает мороженому растаять в
+           пути и позволяет сохранить превосходный вкус.</p>
+      </section>
+      <section class="news">
+        <div class="blog-news">
+          <h3 class="title-blog">Новое в нашем блоге</h3>
+          <p class="article-blog">10 способов сервировки
+             фруктовых щербетов к столу</p>
+        </div>
+        <div class="subscription">
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+             всего самого вкусного, что у нас происходит. Обещаем не спамить
+             и не слать всякой ненужной ерунды. Честно =)</p> 
+          <form class="subcribe-form" action="get">
+            <input class="subsribe-mail" type="text">
+            <button class="button" type="submit">
+          </form>
+        </div>
+      </section>
+      <section class="map">
+        <img>
+        <div class="contacts">
+          <p>Адрес главного офиса
+              и офлайн магазина:
+              ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p>Для заказов по телефону:
+            8 812 450-25-25
+              (с 10 до 20 ежедневно)</p>
+          <a class="button feedback-open-form">Форма обратной связи</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="social-buttons">
+        <ul class="buttons-list">
+          <li><a class="social-button" href="#"></a></li>
+          <li><a class="social-button" href="#"></a></li>
+          <li><a class="social-button" href="#"></a></li>
+          <li><a class="social-button" href="#"></a></li>
+        </ul>
+      </div>
+      <div class="useful-links">
+        <a class="useful-link for-suppliers" href="#">Для поставщиков</a>
+        <a class="useful-link" href="#">О производстве</a>
+        <a class="useful-link" href="#">Наши документы</a>
+        <a class="useful-link" href="#">Экологические стандарты</a>
+      </div>
+      <div class="copyright">
+        <a href="http//:htmlacademy.ru">
+          <svg>
+          </svg>
+        </a>
+        <p>Сделано в HTML Academy © 2017</p>
+      </div>
   </body>
 </html>
