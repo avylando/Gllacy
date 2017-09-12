@@ -1,0 +1,110 @@
+/* Общие стили */
+
+body {
+    font-family: "Roboto", "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+
+    background-color: #849d8f;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    color: inherit;
+    font-size: 18px;
+    line-height: 24px;
+
+    background-color: #ea5239;
+    box-shadow: 0 2px 0 0 rgba(176, 16, 0, 0.64);
+}
+
+.main-menu {
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.slide-title {
+    font-size: 60px;
+    line-height: 60.35px;
+    font-weight: bold;
+}
+
+.sale-title {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+
+.sale-text {
+    font-size: 18px;
+}
+
+.price {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.per-kg {
+    font-size: 30px;
+}
+
+.bestseller-name {
+    font-weight: 500;
+}
+
+.shop-description, .blog-news {
+    color: #323232;
+}
+
+.description-title {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.article-blog {
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.subscription {
+    color: #5a5a5a;
+}
+
+.contacts-title {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #323232;
+}
+
+.adress {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.phone {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.useful-links {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.for-suppliers {
+    font-weight: bold;
+}
