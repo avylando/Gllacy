@@ -17,7 +17,6 @@ body {
     padding-right: 27px;
     margin: 0 auto;
     box-shadow: 0 0 5px 2px #000000;
-
     background-color: #849d8f;
 }
 
@@ -32,12 +31,14 @@ a {
 }
 
 .button {
-    color: inherit;
+    color: #ffffff;
     font-size: 18px;
     line-height: 24px;
+    font-family: inherit;
 
     background-color: #ea5239;
     box-shadow: 0 2px 0 0 rgba(176, 16, 0, 0.64);
+    border: none;
 }
 
 .visually-hidden {
@@ -66,11 +67,7 @@ a {
     line-height: 24px;
 }
 
-.slide-title {
-    font-size: 60px;
-    line-height: 60.35px;
-    font-weight: bold;
-}
+
 
 .sale-title {
     font-size: 35px;
@@ -168,6 +165,7 @@ a {
 .menu-item {
     text-align: center;
     margin-right: 26px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .user-navigation {
@@ -184,21 +182,101 @@ a {
 
 .working-shedule {
     align-self: flex-end;
+    margin: 0;
 }
 
 /* Главная */
+
+/* Слайдер */
+
+.slider {
+    display: flex;
+    min-height: 533px;
+    /* justify-content: center; */
+}
+
+.slide-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 180px;
+} 
+
+.slide-title {
+    font-size: 60px;
+    line-height: 60.35px;
+    font-weight: bold;
+    text-align: center;
+
+    width: 670px;
+    padding-top: 280px;
+    padding-bottom: 30px;
+    margin: 0;
+
+    z-index: 10;
+}
+
+.slide-image {
+    position: absolute;
+    top: -30px;
+    
+}
+
+.slide-button {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 38px;
+
+    border-radius: 40px;
+    z-index: 10;
+}
+
+.slider-navigation {
+    align-self: flex-end;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    padding-bottom: 58px;
+}
+
+.slider-item {
+    display: inline-block;
+    box-sizing: border-box;
+
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.slider-item-current {
+    background-color: #ffffff;
+}
 
 /* Акции */
 
 .sale {
     display: flex;
     justify-content: space-between;
-
 }
 
 .sale-block {
-    flex-wrap: 1;
+    box-sizing: border-box;
+    flex-grow: 1;
     border-radius: 15px;
+    max-width: 560px;
 }
 
 .sale-raspberry {
@@ -213,10 +291,134 @@ a {
     background-size: cover;
 }
 
+/* Блок лучших товаров */
+
+.bestsellers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.bestseller {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    max-width: 267px;
+    z-index: 5;
+}
+
+.bestseller-image {
+    position: absolute;
+    bottom: 70px;
+}
+
+.price {
+    z-index: 10;
+    margin: 0;
+    padding-top: 210px;
+}
+
+.bestseller-name {
+    text-align: center;
+    z-index: 10;
+}
+
 /* Блок описания магазина */
 
 .shop-description {
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 27px;
+    padding-bottom: 25px;
+    margin-top: 24px;
+
     background-image: url("../img/wafer-background.png");
     background-size: cover;
     border-radius: 15px;
+}
+
+.description-title {
+    margin: 0;
+}
+
+.description-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.description-item {
+    max-width: 540px;
+}
+
+/* Блок новостей */
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.news-block {
+    width: 560px;
+}
+
+.blog-news {
+    background-image: url("../img/strawberry-background.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.background-subscription {
+    padding: 5px;
+    background-image: url("../img/post-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.subscription {
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+
+    background-color: #f8f7f4;
+    border-radius: 15px;
+}
+
+.subscription-text {
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-mail {
+    width: 368px;
+}
+
+.subscribe-button {
+    color: #fefefe;
+}
+
+/* Блок карты и контактов */
+
+.map {
+    background-image: url("../img/map.jpg");
+    background-size: cover;
+}
+
+.contacts {
+    background-color: #fffefd;
+}
+
+/* Футер */
+
+.buttons-list {
+    list-style: none;
 }
