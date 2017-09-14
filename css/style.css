@@ -349,11 +349,11 @@ a {
     display: block;
 }
 
-.user-login {
+/* .user-login {
     padding-top: 12px;
     padding-bottom: 12px;
     margin-left: 8px;
-}
+} */
 
 .user-icon {
     vertical-align: bottom;
@@ -419,22 +419,23 @@ a {
     border-bottom: 1px solid #adacaa;
 }
 
-.entrance-button {
+.user-login {
     display: inline-block;
     width: 92px;
     height: 32px;
+    margin-left: 8px;
     background-color: #9db1a5;
     border-radius: 15px;
 }
 
-.entrance-button:hover,
-.entrance-button:focus {
+.user-login:hover,
+.user-login:focus {
     color: #323232;
     background-color: #f8f7f4;
 }
 
-.entrance-button:hover .user-icon-path,
-.entrance-button:focus .user-icon-path {
+.user-login:hover .user-icon-path,
+.user-login:focus .user-icon-path {
     fill: #000000;
 }
 
